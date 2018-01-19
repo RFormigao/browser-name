@@ -14,12 +14,12 @@
         var browser = this.browser;
         
         if ( this.browser[1] === 'Trident' ) browser = this.isIe();
-                
+        
         if ( this.browser[1] === 'Chrome' ) {
           if ( this.isEdge() )  browser = this.isEdge();
           if ( this.isOpera() ) browser = this.isOpera();
         }
-
+        
         return {
           complet : browser[0],
           name    : browser[1],
@@ -29,11 +29,7 @@
 
       'isIe': function isIe() {
         var browser = this.browser;
-        return {
-          complet : browser[0],
-          name    : 'ie',
-          version : browser[2]
-        }
+        return [ browser[0], 'ie', browser[2] ];
       },
 
       'isEdge': function isEdge() {
@@ -52,6 +48,5 @@
       }
     }
   }
-
   console.log(browserInfo().getBrowser());
 })();
