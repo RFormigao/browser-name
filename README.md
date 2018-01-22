@@ -4,17 +4,16 @@ Simple function for take browser name/version
 
 ## Description
 
-This project is development because necessity diferrentes styles for outhers browsers.
+This project was developed for use different styles in other browsers.
 
 ## Getting Started
 
-Add index.js to html
+Add index.js in file .html 
 
 ### Executing program
 
-* Step-by-step bullets
 ``` js
-console.log(browserInfo().getBrowser());
+  browserInfo().getBrowser();
 ```
 
 ## Help
@@ -28,8 +27,7 @@ command to run if program contains helper info
 
 Contributors names and contact info
 
-ex. Robson Formigão 
-ex. [@RFormigao](https://twitter.com/dompizzie)
+Robson Formigão (https://www.facebook.com/RFormigaoGomes) 
 
 ## Version History
 
@@ -38,7 +36,7 @@ ex. [@RFormigao](https://twitter.com/dompizzie)
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the LICENSE.md file for details
 
 ## Acknowledgments
 
