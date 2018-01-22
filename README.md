@@ -36,7 +36,7 @@ Robson Formigão (https://www.facebook.com/RFormigaoGomes)
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the LICENSE.md (https://github.com/RFormigao/getBrowserName/blob/master/LICENSE) file for details
 
 ## Acknowledgments
 
