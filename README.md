@@ -13,7 +13,7 @@ Add index.js in file .html
 ### Executing program
 
 ``` js
-  browserInfo().getBrowser();
+browserInfo().getBrowser();
 ```
 
 ## Help
@@ -27,7 +27,7 @@ command to run if program contains helper info
 
 Contributors names and contact info
 
-Robson Formigão (https://www.facebook.com/RFormigaoGomes) 
+[Robson Formigão](https://www.facebook.com/RFormigaoGomes) 
 
 ## Version History
 
@@ -36,7 +36,7 @@ Robson Formigão (https://www.facebook.com/RFormigaoGomes)
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.md (https://github.com/RFormigao/getBrowserName/blob/master/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/RFormigao/getBrowserName/blob/master/LICENSE) file for details
 
 ## Acknowledgments
 
