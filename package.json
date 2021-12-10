@@ -1,0 +1,9 @@
+{
+  "name": "browser-info",
+  "version": "1.0.0",
+  "description": "Simple function for take browser name/version",
+  "main": "dist/browser-info.js",
+  "repository": "https://github.com/RFormigao/browser-name.git",
+  "author": "(Robson Formigão <rformigao.gomes@gmail.com>",
+  "license": "MIT"
+}

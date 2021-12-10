@@ -1,8 +1,11 @@
-(function () {
-  "use strict";
+(function (global, factory) {
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+  typeof define === 'function' && define.amd ? define(['exports'], factory) :
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.browserInfo = {}));
+})(this, (function (exports) { 'use strict';
 
   function browserInfo() {
-    var userAgent = navigator.userAgent;
+    const userAgent = navigator.userAgent;
 
     return {
       browser:
@@ -11,7 +14,7 @@
         ) || [],
 
       getBrowser: function getBrowser() {
-        var browser = this.browser;
+        const browser = this.browser;
 
         if (this.browser[1] === "Trident") browser = this.isIe();
 
@@ -28,23 +31,23 @@
       },
 
       isIe: function isIe() {
-        var ie = this.browser;
+        const ie = this.browser;
         return [ie[0], "ie", ie[2]];
       },
 
       isEdge: function isEdge() {
-        var edge = userAgent.match(/(edge(?=\/))\/?\s*(\d+)/i) || [];
+        const edge = userAgent.match(/(edge(?=\/))\/?\s*(\d+)/i) || [];
         if (edge[1] === "Edge") return edge;
       },
 
       isOpera: function isOpera() {
-        var opera = userAgent.match(/(OPR(?=\/))\/?\s*(\d+)/i) || [];
+        const opera = userAgent.match(/(OPR(?=\/))\/?\s*(\d+)/i) || [];
         if (opera[1] === "OPR") return opera;
       },
 
       addBrowserToBody: function addBrowserToBody() {
-        var browser = browserInfo().getBrowser().name;
-        var body = document.getElementsByTagName("body");
+        const browser = browserInfo().getBrowser().name;
+        const body = document.getElementsByTagName("body");
 
         if (body.length) {
           body[0].classList.add(browser);
@@ -53,5 +56,8 @@
     };
   }
 
-  return browserInfo();
-})();
+  exports.browserInfo = browserInfo;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
