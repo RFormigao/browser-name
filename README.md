@@ -1,39 +1,37 @@
-# Get Browser Name/Version
+# getBrowserInfo
 
-Simple function for take browser name/version
+O `getBrowserInfo` é uma função JavaScript que permite obter informações do navegador em que o seu aplicativo está sendo executado. Ele retorna um objeto contendo o nome do navegador e a sua versão.
 
-## Description
+## Como usar
 
-This project was developed for use different styles in other browsers.
+1. Adicione o arquivo `getBrowserInfo.js` ao seu projeto.
 
-## Getting Started
+2. Importe a função `getBrowserInfo` no seu arquivo JavaScript.
 
-Add index.js in file .html 
-
-### Executing program
-
-``` js
-browserInfo().getBrowser();
+```javascript
+   import { getBrowserInfo } from './getBrowserInfo.js';
 ```
 
+3. Chame a função `getBrowserInfo` para obter as informações do navegador.
 
-## Authors
+```javascript
+   const browser = getBrowserInfo();
+   console.log(`Browser: ${browser.name} ${browser.version}`);
+```
 
-Contributors names and contact info
+## Exemplo de retorno
 
-[Robson Formigão](https://www.facebook.com/RFormigaoGomes) 
+```javascript
+{
+  name: "chrome",
+  version: 89
+}
+```
 
-## Version History
+## Dependências
 
-* 0.1
-    * Initial Release
+O `getBrowserInfo` depende da propriedade `navigator.userAgent`, que é suportada pela maioria dos navegadores modernos.
 
-## License
+## Contribuindo
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/RFormigao/getBrowserName/blob/master/LICENSE) file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [GregoryVarghese](https://www.gregoryvarghese.com/how-to-get-browser-name-and-version-via-javascript/)
-* [User-Agent](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/User-Agent)
+Se você encontrar algum problema ou tiver sugestões de melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
